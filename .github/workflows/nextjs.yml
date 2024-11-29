@@ -68,8 +68,7 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          TEST: ${{ vars.TEST2 }}
-          TEST2: ${{ secrets.TEST }}
+          TEST: ${{ secrets.TEST }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
