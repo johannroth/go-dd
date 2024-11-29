@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   output: "export",
   // required option to deploy to github pages
   distDir: "docs",
-  basePath: "/go-dd"
 };
 
 export default nextConfig;
